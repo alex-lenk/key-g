@@ -1,0 +1,147 @@
+.top-bar__wrap {
+  align-items: center;
+}
+
+.top-bar__nav {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.top-bar__btn {
+  height: 52px;
+  margin-left: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  border-radius: 50px;
+  color: #fff;
+  background-color: $link-color;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: #e43d40;
+    color: #fff;
+  }
+}
+
+.top-bar__btn-decor {
+  font-size: 18px;
+  padding-right: 12px;
+}
+
+.top-bar__login {
+  margin-left: 15px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.menu {
+  height: 90px;
+  line-height: 1;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.menu-item {
+  height: inherit;
+  color: #2a2a2a;
+}
+
+.menu-parent {
+  position: relative;
+
+  &::after {
+    font-size: 13px;
+    position: absolute;
+    right: 7px;
+    bottom: 40px;
+    content: "\f107";
+    font-family: FontAwesome;
+    transition: transform .3s;
+  }
+
+  &:hover {
+    &::after {
+      color: $link-color;
+      transform: rotate(180deg);
+    }
+
+    .sub-menu {
+      border-color: #f85c70;
+      opacity: 1;
+      visibility: visible;
+      transform: scaleY(1);
+    }
+  }
+}
+
+.menu-link {
+  padding: 37px 24px;
+  display: block;
+  position: relative;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  text-transform: capitalize;
+  white-space: nowrap;
+  color: inherit;
+  transition: color .5s ease-out, background-color .5s ease-out;
+}
+
+.sub-menu {
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: scaleY(0);
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+  padding: 15px 0;
+  transform-origin: 0 0 0;
+  transition: all .3s ease 0s;
+  z-index: 90;
+  width: 230px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .3);
+  border-top: 2px solid $link-color;
+
+  .menu-item {
+    display: block;
+    padding: 0 20px;
+  }
+
+  .menu-link {
+    border-radius: 2px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+
+    &:hover {
+      color: #fff;
+      background-color: #f85c70;
+    }
+  }
+}
+
+.menu-columns > .sub-menu {
+  width: auto;
+  display: flex;
+
+  > .menu-item > .menu-link {
+    display: none;
+  }
+
+  .sub-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+  }
+}
