@@ -1,0 +1,25 @@
+$font-stack: 'Roboto', -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+
+body {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Nunito, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  background-color: #f5f7fa;
+}
