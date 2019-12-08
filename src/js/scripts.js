@@ -15,5 +15,14 @@ $(document).ready(function () {
         focusOnSelect: true
     });
 
-    /*$('.rtcl-slider-item img').zoom();*/
+
+    $('.related-carousel').slick({
+        infinite: true,
+        arrows: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        appendArrows: '.related-carousel__nav',
+        prevArrow: '<button type="button" class="related-carousel-prev"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="related-carousel-next"><i class="fa fa-angle-right"></i></button>'
+    });
 });

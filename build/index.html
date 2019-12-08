@@ -206,10 +206,10 @@
     </div>
   </div>
 
-  <div class="page-wrap container">
+  <div class="single-wrap container">
     <div class="row">
       <div class="col-xl-9 col-lg-8 col-sm-12 col-12">
-          <div class="single-block">
+          <div class="single-block single-block-content">
             <div class="post-slider">
                 <span class="post-slider__gallery" data-fancybox="post-slider__big" data-src="img/example/headphones-858x493.png">
                   <i class="fa fa-search"></i>
@@ -320,7 +320,7 @@
               </div>
             </div>
 
-            <ul class='single-action list-inline list-group-flush'>
+            <ul class="single-action list-inline list-group-flush">
               <li class="list-inline-item">
                 <span class="fa fa-heart-o"></span>
                 <span class="single-action__label">Add to Favourites</span>
@@ -337,204 +337,148 @@
                 <a href="#" class="single-social__item fa fa-fw fa-google-plus" target="_blank" rel="nofollow"></a>
               </li>
             </ul>
-
-            <div class="modal fade" id="rtcl-report-abuse-modal" tabindex="-1" role="dialog"
-                 aria-labelledby="rtcl-report-abuse-modal-label">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <form id="rtcl-report-abuse-form" class="form-vertical">
-                    <div class="modal-header"><h5 class="modal-title"
-                                                  id="rtcl-report-abuse-modal-label">Report
-                      Abuse</h5>
-                      <button type="button" class="close" data-dismiss="modal"
-                              aria-label="Close"><span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <div class="form-group"><label for="rtcl-report-abuse-message">Your
-                        Complain<span class="rtcl-star">*</span></label><textarea
-                              class="form-control" id="rtcl-report-abuse-message" rows="3"
-                              placeholder="Message... " required></textarea></div>
-                      <div id="rtcl-report-abuse-g-recaptcha"></div>
-                      <div id="rtcl-report-abuse-message-display"></div>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">
-                        Close
-                      </button>
-                      <button type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
           </div>
 
 
-        <div class="site-content-block classima-single-map">
-          <div class="main-title-block"><h3 class="main-title">Location</h3></div>
-          <div class="main-content">
+        <div class="single-block">
+          <div class="single-block__header">
+            <h3 class="single-block__title">Location</h3>
+          </div>
+          <div class="single-block-content">
             <div class="embed-responsive embed-responsive-16by9">
-              <div class="rtcl-map embed-responsive-item">
-                <div class="marker" data-latitude="40.7476654"
-                     data-longitude="-73.63890379999998"
-                     data-address="House#18, Road#07,11501,New York,Mineola">House#18,
-                  Road#07,11501,New York,Mineola
-                </div>
+              <div class="embed-responsive-item">
+                <div style="width: auto;height: 460px" id="mapsk1fywes"></div>
               </div>
             </div>
           </div>
         </div>
-        <div class="classima-listing-single-mob classima-listing-single-sidebar sidebar-widget-area">
-          <div class="content-block-gap"></div>
-          <div class="classified-seller-info widget"><h3 class="widgettitle">Seller Information</h3>
-            <div class="rtin-box">
-              <div class="rtin-author"><img class="rtcl-thumbnail"
-                                            src="https://www.radiustheme.com/demo/wordpress/themes/classima/wp-content/uploads/2019/08/logo4-1-180x140.jpg"
-                                            alt="RadiusTheme"/><h4 class="rtin-name"><a
-                      href="https://www.radiustheme.com/demo/wordpress/themes/classima/store/radiustheme/">RadiusTheme</a>
-              </h4></div>
-              <div class="rtin-location rtin-box-item clearfix"><i class="fa fa-fw fa-map-marker"
-                                                                   aria-hidden="true"></i>
-                <div class="rtin-box-item-text">New York, Mineola
-                  <div class='loc-address'>House#18, Road#07</div>
-                </div>
-              </div>
-              <div class="rtin-store rtin-box-item clearfix"><i
-                      class="fa fa-fw fa-shopping-basket" aria-hidden="true"></i><a
-                      class="rtin-box-item-text"
-                      href="https://www.radiustheme.com/demo/wordpress/themes/classima/store/radiustheme/">View
-                Store</a></div>
-              <div class="rtin-phone">
-                <div class='rtcl-contact-reveal-wrapper reveal-phone'
-                     data-options="{&quot;safe_phone&quot;:&quot;6735568XXX&quot;,&quot;phone_hidden&quot;:&quot;743&quot;}">
-                  <div class='numbers'>6735568XXX</div>
-                  <small class='text-muted'>Click to reveal phone number</small></div>
-              </div>
-              <div class="media rtin-email"><a data-toggle="modal"
-                                               data-target="#classima-mail-to-seller" href="#"><i
-                      class="fa fa-envelope" aria-hidden="true"></i>Email to Seller</a></div>
-            </div>
+
+        <div class="single-block">
+          <div class="single-block__header">
+            <h3 class="single-block__title">Related Ads</h3>
+            <div class="related-carousel__nav"></div>
           </div>
-        </div>
-        <div class="content-block-gap"></div>
-        <div class="site-content-block classima-single-related owl-wrap">
-          <div class="main-title-block"><h3 class="main-title">Related Ads</h3>
-            <div class="owl-related-nav owl-custom-nav">
-              <div class="owl-prev"><i class="fa fa-angle-left"></i></div>
-              <div class="owl-next"><i class="fa fa-angle-right"></i></div>
-            </div>
-          </div>
-          <div class="main-content">
-            <div class="owl-theme owl-carousel rt-owl-carousel"
-                 data-carousel-options="{&quot;nav&quot;:false,&quot;dots&quot;:false,&quot;autoplay&quot;:true,&quot;autoplayTimeout&quot;:5000,&quot;autoplaySpeed&quot;:2000,&quot;autoplayHoverPause&quot;:true,&quot;loop&quot;:true,&quot;margin&quot;:20,&quot;responsive&quot;:{&quot;0&quot;:{&quot;items&quot;:1},&quot;500&quot;:{&quot;items&quot;:2},&quot;1200&quot;:{&quot;items&quot;:3}}}">
-              <div class="listing-grid-each listing-grid-each-1 rtcl-listing-item">
-                <div class="rtin-item">
-                  <div class="rtin-thumb"><a class="rtin-thumb-inner rtcl-media"
-                                             href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/hd-27-inch-mac-1-year-used-only/"><img
-                          width="400" height="280"
-                          src="https://www.radiustheme.com/demo/wordpress/themes/classima/wp-content/uploads/classified-listing/2018/11/imac-400x280.png"
-                          class="rtcl-thumbnail" alt=""/></a></div>
-                  <div class="rtin-content"><h3 class="rtin-title listing-title"
-                                                title="HD 27 inch Mac 1 year used only"><a
-                          href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/hd-27-inch-mac-1-year-used-only/">HD
-                    27 inch Mac 1 year used only</a></h3>
-                    <div class='rtcl-listing-badge-wrap'><span
-                            class="badge new-badge badge-primary">New</span></div>
-                    <ul class="rtin-meta">
-                      <li><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>4 months
+          <div class="single-block-content">
+            <div class="related-carousel">
+              <div class="related-carousel__item">
+                <div class="related-carousel__inner card-post">
+                  <a href="#" class="card-media">
+                    <img src="img/example/imac-400x280.png" class="card-media__img" alt="">
+                  </a>
+
+                  <div class="card-content">
+                    <span class="card-title">
+                      <a href="#" class="card-title__link">HD 27 inch Mac 1 year used only</a>
+                    </span>
+                    <span class='card-title__badge'>
+                      <span class="badge badge-danger">New</span>
+                    </span>
+
+                    <ul class="card-meta list-unstyled">
+                      <li class="card-meta__item"><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>4 months
                         ago
                       </li>
-                      <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Port
+                      <li class="card-meta__item"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Port
                         Chester, New York
                       </li>
                     </ul>
-                    <div class="rtin-price"><span class="rtcl-price-amount amount"><span
-                            class="rtcl-price-currencySymbol">&#36;</span>2,500</span></div>
+
+                    <div class="card-price">
+                      <span class="card-price__amount">$2,500</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="listing-grid-each listing-grid-each-1 rtcl-listing-item">
-                <div class="rtin-item">
-                  <div class="rtin-thumb"><a class="rtin-thumb-inner rtcl-media"
-                                             href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/new-banded-smart-watch/"><img
-                          width="400" height="280"
-                          src="https://www.radiustheme.com/demo/wordpress/themes/classima/wp-content/uploads/classified-listing/2018/11/watch-400x280.png"
-                          class="rtcl-thumbnail" alt=""/></a></div>
-                  <div class="rtin-content"><h3 class="rtin-title listing-title"
-                                                title="New Banded Smart Watch"><a
-                          href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/new-banded-smart-watch/">New
-                    Banded Smart Watch</a></h3>
-                    <div class='rtcl-listing-badge-wrap'><span
-                            class="badge new-badge badge-primary">New</span></div>
-                    <ul class="rtin-meta">
-                      <li><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>4 months
-                        ago
+
+              <div class="related-carousel__item">
+                <div class="related-carousel__inner card-post">
+                  <a href="#" class="card-media">
+                    <img src="img/example/watch-400x280.png" class="card-media__img" alt="">
+                  </a>
+
+                  <div class="card-content">
+                    <span class="card-title">
+                      <a href="#" class="card-title__link">New Banded Smart Watch</a>
+                    </span>
+                    <span class='card-title__badge'>
+                      <span class="badge badge-danger">New</span>
+                    </span>
+
+                    <ul class="card-meta list-unstyled">
+                      <li class="card-meta__item"><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>4 months ago
                       </li>
-                      <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Kansas,
-                        Emporia
+                      <li class="card-meta__item"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>Kansas, Emporia
                       </li>
                     </ul>
-                    <div class="rtin-price"><span class="rtcl-price-amount amount"><span
-                            class="rtcl-price-currencySymbol">&#36;</span>47</span></div>
+
+                    <div class="card-price">
+                      <span class="card-price__amount">$47</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="listing-grid-each listing-grid-each-1 rtcl-listing-item">
-                <div class="rtin-item">
-                  <div class="rtin-thumb"><a class="rtin-thumb-inner rtcl-media"
-                                             href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/running-shoes-imported-from-china/"><img
-                          width="400" height="280"
-                          src="https://www.radiustheme.com/demo/wordpress/themes/classima/wp-content/uploads/classified-listing/2018/11/shoes-400x280.png"
-                          class="rtcl-thumbnail" alt=""/></a></div>
-                  <div class="rtin-content"><h3 class="rtin-title listing-title"
-                                                title="Running shoes imported from china"><a
-                          href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/running-shoes-imported-from-china/">Running
-                    shoes imported from china</a></h3>
-                    <div class='rtcl-listing-badge-wrap'><span
-                            class="badge new-badge badge-primary">New</span></div>
-                    <ul class="rtin-meta">
-                      <li><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>5 months
-                        ago
+
+              <div class="related-carousel__item">
+                <div class="related-carousel__inner card-post">
+                  <a href="#" class="card-media">
+                    <img src="img/example/shoes-400x280.png" class="card-media__img" alt="">
+                  </a>
+
+                  <div class="card-content">
+                    <span class="card-title">
+                      <a href="#" class="card-title__link">Running shoes imported from china</a>
+                    </span>
+                    <span class='card-title__badge'>
+                      <span class="badge badge-danger">New</span>
+                    </span>
+
+                    <ul class="card-meta list-unstyled">
+                      <li class="card-meta__item">
+                        <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>5 months ago
                       </li>
-                      <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>California,
-                        Bakersfield
+                      <li class="card-meta__item">
+                        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>California, Bakersfield
                       </li>
                     </ul>
-                    <div class="rtin-price"><span class="rtcl-price-amount amount"><span
-                            class="rtcl-price-currencySymbol">&#36;</span>36</span></div>
+
+                    <div class="card-price">
+                      <span class="card-price__amount">$36</span>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="listing-grid-each listing-grid-each-1 rtcl-listing-item">
-                <div class="rtin-item">
-                  <div class="rtin-thumb"><a class="rtin-thumb-inner rtcl-media"
-                                             href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/team-jersey-available-in-reasonable-price/"><img
-                          width="400" height="280"
-                          src="https://www.radiustheme.com/demo/wordpress/themes/classima/wp-content/uploads/classified-listing/2018/11/jersey-400x280.png"
-                          class="rtcl-thumbnail" alt=""/></a></div>
-                  <div class="rtin-content"><h3 class="rtin-title listing-title"
-                                                title="Team Jersey available in reasonable price">
-                    <a href="https://www.radiustheme.com/demo/wordpress/themes/classima/listing/team-jersey-available-in-reasonable-price/">Team
-                      Jersey available in reasonable price</a></h3>
-                    <div class='rtcl-listing-badge-wrap'><span
-                            class="badge new-badge badge-primary">New</span></div>
-                    <ul class="rtin-meta">
-                      <li><i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>5 months
-                        ago
+
+              <div class="related-carousel__item">
+                <div class="related-carousel__inner card-post">
+                  <a href="#" class="card-media">
+                    <img src="img/example/jersey-400x280.png" class="card-media__img" alt="">
+                  </a>
+
+                  <div class="card-content">
+                    <span class="card-title">
+                      <a href="#" class="card-title__link">Team Jersey available in reasonable price</a>
+                    </span>
+
+                    <ul class="card-meta list-unstyled">
+                      <li class="card-meta__item">
+                        <i class="fa fa-fw fa-clock-o" aria-hidden="true"></i>5 months ago
                       </li>
-                      <li><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>New
-                        Jersey, Bloomfield
+                      <li class="card-meta__item">
+                        <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>New Jersey, Bloomfield
                       </li>
                     </ul>
-                    <div class="rtin-price"><span class="rtcl-price-amount amount"><span
-                            class="rtcl-price-currencySymbol">&#36;</span>90</span></div>
+
+                    <div class="card-price">
+                      <span class="card-price__old">$120</span>
+                      <span class="card-price__amount">$90</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
         <div class="content-block-gap"></div>
         <div class="site-content-block">
           <div class="main-title-block review-title-block"><h3 class="main-title">1 Review</h3>
@@ -648,7 +592,54 @@
 
 </main>
 
+<div class="modal fade" id="rtcl-report-abuse-modal" tabindex="-1" role="dialog"
+     aria-labelledby="rtcl-report-abuse-modal-label">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <form id="rtcl-report-abuse-form" class="form-vertical">
+        <div class="modal-header"><h5 class="modal-title"
+                                      id="rtcl-report-abuse-modal-label">Report
+          Abuse</h5>
+          <button type="button" class="close" data-dismiss="modal"
+                  aria-label="Close"><span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group"><label for="rtcl-report-abuse-message">Your
+            Complain<span class="rtcl-star">*</span></label><textarea
+                  class="form-control" id="rtcl-report-abuse-message" rows="3"
+                  placeholder="Message... " required></textarea></div>
+          <div id="rtcl-report-abuse-g-recaptcha"></div>
+          <div id="rtcl-report-abuse-message-display"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">
+            Close
+          </button>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
 <script src="js/lib.min.js"></script>
 <script src="js/scripts.min.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=GoogleReadyHandlersk1fywes" async defer></script>
+
+<script>
+    function GoogleReadyHandlersk1fywes() {
+        var infoWindow, map = new google.maps.Map(document.getElementById("mapsk1fywes"), {
+            center: {lat: 40.74741884809068, lng: -73.78190946044555},
+            zoom: 15,
+            disableDefaultUI: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            mapTypeId: "roadmap"
+        });
+        return map;
+    }
+</script>
 </body>
 </html>

@@ -1,4 +1,20 @@
 <script src="js/lib.min.js"></script>
 <script src="js/scripts.min.js"></script>
+
+<script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=GoogleReadyHandlersk1fywes" async defer></script>
+
+<script>
+    function GoogleReadyHandlersk1fywes() {
+        var infoWindow, map = new google.maps.Map(document.getElementById("mapsk1fywes"), {
+            center: {lat: 40.74741884809068, lng: -73.78190946044555},
+            zoom: 15,
+            disableDefaultUI: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            mapTypeId: "roadmap"
+        });
+        return map;
+    }
+</script>
 </body>
 </html>
