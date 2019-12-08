@@ -1,0 +1,36 @@
+.star-rating {
+  overflow: hidden;
+  position: relative;
+  height: 1em;
+  line-height: 1;
+  font-size: 1em;
+  width: 5em;
+  letter-spacing: 1px;
+  font-family: FontAwesome;
+
+  &::before {
+    content: "\f005\f005\f005\f005\f005";
+    color: #cc9000;
+    float: left;
+    top: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+
+.star-rating__inner {
+  overflow: hidden;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding-top: 1.5em;
+
+  &::before {
+    content: "\f005\f005\f005\f005\f005";
+    top: 0;
+    position: absolute;
+    left: 0;
+    color: #ffb400;
+  }
+}
