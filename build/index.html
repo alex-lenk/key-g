@@ -208,7 +208,7 @@
 
     <div class="single-wrap container">
         <div class="row">
-            <!-- BEGIN content left -->
+            <!-- BEGIN content -->
             <div class="col-xl-9 col-lg-8 col-sm-12 col-12">
                 <div class="single-block single-block-content">
                     <div class="post-slider">
@@ -587,6 +587,61 @@
                 </div>
             </div>
             <!-- END content left -->
+
+            <!-- BEGIN sidebar -->
+            <aside class="col-xl-3 col-lg-4 col-sm-12 col-12">
+                <div class="sidebar-price">
+                    <span class="sidebar-price__amount">$15</span>
+                </div>
+
+                <div class="widget">
+                    <h3 class="widget-title">Seller Information</h3>
+
+                    <div class="widget-box">
+                        <div class="widget-box__author">
+                            <img class="widget-box__author-thumbnail" src="img/example/logo4-1-180x140.jpg" alt="">
+                            <a href="#" class="widget-box__author-name">RadiusTheme</a>
+                        </div>
+                        <div class="widget-box__item">
+                            <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i>
+                            <div class="widget-box__item-text">
+                                New York, Mineola House#18, Road#07
+                            </div>
+                        </div>
+                        <div class="widget-box__item">
+                            <i class="fa fa-fw fa-shopping-basket" aria-hidden="true"></i>
+                            <a class="widget-box__item-text" href="#">View Store</a>
+                        </div>
+                        <div class="widget-box__phone">
+                            <div class="widget-box__phone-reveal">
+                                <div class="numbers">6735568XXX</div>
+                                <small class="text-muted">Click to reveal phone number</small>
+                            </div>
+                        </div>
+                        <div class="widget-box__email">
+                            <a href="#" class="widget-box__email-button" data-toggle="modal" data-target="#mail-to-seller">
+                                <i class="fa fa-envelope" aria-hidden="true"></i>Email to Seller
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget widget-text">
+                    <h3 class="widget-title">Safety Tips for Buyers</h3>
+                    <div class="widget-box">
+                        <ul class="list-arrow">
+                            <li class="list-arrow__item">Meet seller at a public place</li>
+                            <li class="list-arrow__item">Check The item before you buy</li>
+                            <li class="list-arrow__item">Pay only after collecting The item</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="widget">
+                    <a href="#" target="_blank" rel="nofollow"><img src="img/example/info-site.png" alt=""></a>
+                </div>
+            </aside>
+            <!-- END sidebar -->
         </div>
     </div>
 </div>
@@ -618,6 +673,41 @@
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </div>
             </form>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="mail-to-seller" tabindex="-1" role="dialog"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" data-hide="0">
+                <form id="rtcl-contact-form" class="form-vertical">
+                    <div class="form-group"><input type="text" class="form-control"
+                                                   id="rtcl-contact-name"
+                                                   placeholder="Name *"
+                                                   required/></div>
+                    <div class="form-group"><input type="email" class="form-control"
+                                                   id="rtcl-contact-email"
+                                                   placeholder="Email*"
+                                                   required/></div>
+                    <div class="form-group"><textarea class="form-control"
+                                                      id="rtcl-contact-message" rows="3"
+                                                      placeholder="Message*"
+                                                      required></textarea></div>
+                    <div id="rtcl-contact-g-recaptcha"></div>
+                    <p id="rtcl-contact-message-display"></p>
+                    <button type="submit"
+                            class="btn btn-primary">Submit
+                    </button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

@@ -25,4 +25,16 @@ $(document).ready(function () {
         prevArrow: '<button type="button" class="related-carousel-prev"><i class="fa fa-angle-left"></i></button>',
         nextArrow: '<button type="button" class="related-carousel-next"><i class="fa fa-angle-right"></i></button>'
     });
+
+    function showTooltip() {
+        var myDiv = document.getElementById('tooltip');
+        var myLink = document.getElementById('link');
+        if (myDiv.style.display == 'none') {
+            myDiv.style.display = 'block';
+            myLink.style.display = 'none';
+        } else {
+            myDiv.style.display = 'none';
+        }
+        return false;
+    }
 });

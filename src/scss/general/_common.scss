@@ -59,6 +59,36 @@ img {
   }
 }
 
+
+.list-arrow {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-arrow__item {
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 8px;
+  margin-right: 5px;
+
+  &::before {
+    text-align: center;
+    content: "\f105";
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    font-size: 15px;
+    line-height: 1;
+    left: 0;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 1;
+    color: $pink;
+    font-family: FontAwesome;
+  }
+}
+
 .wrapper {
   background-color: #f5f7fa;
 }
