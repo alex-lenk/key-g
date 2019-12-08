@@ -1,3 +1,10 @@
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-base: 'Roboto', -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+$body-color: #646464;
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
@@ -13,14 +20,27 @@ $container-max-widths: (
 //
 // Set the number of columns and specify the width of the gutters.
 
-$grid-gutter-width:           20px;
+$grid-gutter-width: 20px;
 
 // stylelint-disable-next-line scss/dollar-variable-default
-$red:     #f85c70;
+$red: #e7291e;
+$pink: #f85c70;
 
 
 // Links
 //
 // Style anchor elements.
 
-$link-color: $red;
+$link-color: $pink;
+
+// Badges
+
+$badge-font-weight: 400;
+$badge-padding-y: .45em;
+$badge-padding-x: .65em;
+
+// Navs
+
+$nav-tabs-link-active-color: #fff;
+$nav-tabs-link-active-bg: $pink;
+$nav-tabs-link-hover-border-color: transparent;

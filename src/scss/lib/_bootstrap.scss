@@ -12,6 +12,10 @@
 @import "bootstrap-4.4.1/transitions";
 @import "bootstrap-4.4.1/popover";
 @import "bootstrap-4.4.1/tooltip";
+@import "bootstrap-4.4.1/badge";
+@import "bootstrap-4.4.1/nav";
+@import "bootstrap-4.4.1/type";
+@import "bootstrap-4.4.1/modal";
 
 //@import "bootstrap-4.4.1/grid";
 // Container widths
@@ -59,6 +63,21 @@
 .list-unstyled {
   margin-bottom: 0;
   @include list-unstyled();
+}
+
+
+.nav-link {
+  background-color: #f2f2f2;
+  color: #111;
+  font-weight: 600;
+  padding: .438rem 2.133rem;
+  &:hover {
+    color: inherit;
+  }
+}
+
+.tab-content {
+  padding-top: 25px;
 }
 
 /* END Bootstrap */

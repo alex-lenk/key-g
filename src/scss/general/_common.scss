@@ -1,11 +1,3 @@
-$font-stack: 'Roboto', -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
-
-body {
-  font-family: $font-stack;
-  font-weight: 400;
-  font-size: 16px;
-}
-
 a:hover {
   text-decoration: none;
 }
@@ -20,6 +12,54 @@ img {
   max-width: 100%;
 }
 
+.list-spec {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-spec-col-2 .list-spec__item {
+  width: 49%;
+  float: left;
+}
+
+.list-spec__item {
+  padding-left: 30px;
+  position: relative;
+  margin-bottom: 8px;
+  margin-right: 5px;
+
+  &::before {
+    text-align: center;
+    content: "\f105";
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    font-size: 15px;
+    line-height: 1;
+    left: 0;
+    top: 5px;
+    border-radius: 50%;
+    z-index: 1;
+    color: #fff;
+    background-color: $pink;
+    font-family: FontAwesome;
+  }
+}
+
 .wrapper {
   background-color: #f5f7fa;
+}
+
+.page-wrap {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.single-block {
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .1);
 }
