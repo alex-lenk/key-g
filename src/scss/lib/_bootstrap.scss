@@ -16,6 +16,9 @@
 @import "bootstrap-4.4.1/nav";
 @import "bootstrap-4.4.1/type";
 @import "bootstrap-4.4.1/modal";
+@import "bootstrap-4.4.1/forms";
+@import "bootstrap-4.4.1/utilities/flex";
+@import "bootstrap-4.4.1/buttons";
 
 //@import "bootstrap-4.4.1/grid";
 // Container widths
@@ -50,11 +53,6 @@
   @include make-grid-columns();
 }
 
-//@import "bootstrap-4.4.1/utilities/display";
-@import "bootstrap-4.4.1/utilities/flex";
-//@import "bootstrap-4.4.1/utilities/spacing";
-/*@import "bootstrap-4.4.1/forms";
-@import "bootstrap-4.4.1/tables";*/
 
 //
 // Lists
@@ -71,6 +69,7 @@
   color: #111;
   font-weight: 600;
   padding: .438rem 2.133rem;
+
   &:hover {
     color: inherit;
   }

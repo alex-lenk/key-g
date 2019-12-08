@@ -25,7 +25,7 @@ $grid-gutter-width: 20px;
 // stylelint-disable-next-line scss/dollar-variable-default
 $red: #e7291e;
 $pink: #f85c70;
-
+$primary: $pink;
 
 // Links
 //
@@ -44,3 +44,26 @@ $badge-padding-x: .65em;
 $nav-tabs-link-active-color: #fff;
 $nav-tabs-link-active-bg: $pink;
 $nav-tabs-link-hover-border-color: transparent;
+
+// Forms
+
+$input-height: 45px;
+$input-color: #222;
+$input-bg: #f9f9f9;
+$input-border-width: 0;
+$input-border-radius: 0;
+$input-box-shadow: none;
+$enable-shadows: true;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-font-weight: 500;
+$btn-font-size: 15px;
+$btn-border-radius: 0;
+$btn-padding-y: .725rem;
+$btn-padding-x: 2rem;
+$btn-transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+$btn-focus-box-shadow: none;
+$btn-box-shadow: none;
