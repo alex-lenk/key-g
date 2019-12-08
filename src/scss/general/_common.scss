@@ -42,13 +42,8 @@ img {
   list-style: none;
 }
 
-.list-spec-col-2 .list-spec__item {
-  width: 49%;
-  float: left;
-}
-
-.list-spec__item {
-  padding-left: 30px;
+.list-spec__item,
+.list-arrow__item {
   position: relative;
   margin-bottom: 8px;
   margin-right: 5px;
@@ -65,9 +60,16 @@ img {
     top: 5px;
     border-radius: 50%;
     z-index: 1;
+    font-family: FontAwesome;
+  }
+}
+
+.list-spec__item {
+  padding-left: 30px;
+
+  &::before {
     color: #fff;
     background-color: $pink;
-    font-family: FontAwesome;
   }
 }
 
@@ -80,24 +82,16 @@ img {
 
 .list-arrow__item {
   padding-left: 20px;
-  position: relative;
-  margin-bottom: 8px;
-  margin-right: 5px;
 
   &::before {
-    text-align: center;
-    content: "\f105";
-    height: 16px;
-    width: 16px;
-    position: absolute;
-    font-size: 15px;
-    line-height: 1;
-    left: 0;
-    top: 5px;
-    border-radius: 50%;
-    z-index: 1;
     color: $pink;
-    font-family: FontAwesome;
+  }
+}
+
+@media (min-width: 992px) {
+  .list-spec-col-2 .list-spec__item {
+    width: 49%;
+    float: left;
   }
 }
 

@@ -3,11 +3,6 @@
   font-size: 15px;
 }
 
-.footer-top {
-  padding-top: 78px;
-  padding-bottom: 44px;
-}
-
 .footer-widget {
   margin-bottom: 30px;
   color: #a5a5a5;
@@ -98,7 +93,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  text-align: right;
   font-size: 0;
 
   li {
@@ -107,5 +101,33 @@
     &:not(:first-child) {
       padding-left: 4px;
     }
+  }
+}
+
+@media (min-width: 576px) {
+  .payment-icons {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-top {
+    padding-top: 78px;
+    padding-bottom: 44px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-top {
+    padding-top: 50px;
+  }
+  .payment-icons {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footer-bottom {
+    text-align: center;
   }
 }

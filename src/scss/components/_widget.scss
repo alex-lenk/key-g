@@ -1,11 +1,5 @@
 .sidebar-price {
-  background-color: #f85c70;
-  color: #fff;
-  padding: 20px;
-  border-radius: 2px;
-  margin-bottom: 25px;
-  font-weight: 700;
-  line-height: 1;
+  display: none;
 }
 
 .sidebar-price__amount {
@@ -124,5 +118,24 @@
   .fa {
     color: #e43d40;
     padding-right: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .widget-info {
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar-price {
+    background-color: #f85c70;
+    color: #fff;
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 25px;
+    font-weight: 700;
+    line-height: 1;
+    display: block;
   }
 }
