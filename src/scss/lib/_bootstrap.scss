@@ -80,4 +80,18 @@
   padding-top: 25px;
 }
 
-/* END Bootstrap */
+
+@media (max-width: 575px) {
+  .nav-link {
+    font-size: 15px;
+    background-color: #f2f2f2;
+    color: #111;
+    font-weight: 600;
+    padding: 5px 15px;
+  }
+  .single-action .list-inline-item {
+    margin-bottom: 3px;
+    display: flex;
+    align-items: center;
+  }
+}

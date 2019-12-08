@@ -1,7 +1,4 @@
-var syntax = 'scss'; // Syntax: sass or scss;
-
 var gulp = require('gulp'),
-    gutil = require('gulp-util'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     rigger = require('gulp-rigger'),
@@ -28,7 +25,7 @@ gulp.task('browser-sync', function () {
 
 // Sass|Scss Styles
 gulp.task('styles', function () {
-    return gulp.src('./src/' + syntax + '/**/*.' + syntax + '')
+    return gulp.src('./src/scss/*.scss')
         .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix: ''}))
         .pipe(autoprefixer(['last 2 versions']))
@@ -106,7 +103,7 @@ gulp.task('favicon', gulp.parallel('favicon'));
 gulp.task('fonts', gulp.parallel('fonts'));
 
 gulp.task('watch', function () {
-    gulp.watch('./src/' + syntax + '/**/*.' + syntax + '', gulp.parallel('styles'));
+    gulp.watch('./src/scss/**/*.scss', gulp.parallel('styles'));
     gulp.watch(['./src/js/**/*.js'], gulp.parallel('scripts'));
     gulp.watch('./src/view/*.html', gulp.parallel('code'));
     gulp.watch('./src/img/**/*', gulp.parallel('img'));

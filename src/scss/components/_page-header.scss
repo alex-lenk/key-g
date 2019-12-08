@@ -44,3 +44,13 @@
   color: #fff;
   transition: color .5s ease-out;
 }
+
+@media (max-width: 991px) {
+  .page-header__title {
+    line-height: 1.2;
+  }
+
+  .breadcrumb-item {
+    line-height: 1.8;
+  }
+}

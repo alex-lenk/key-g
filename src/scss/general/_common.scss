@@ -1,3 +1,15 @@
+body::before {
+  width: 100%;
+  display: block;
+  content: '';
+  @media (max-width: 991px) {
+    height: 52px;
+  }
+  @media (min-width: 992px) {
+    height: 90px;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }

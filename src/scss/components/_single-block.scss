@@ -9,7 +9,6 @@
 }
 
 .single-block-content {
-  padding: 30px;
   margin-bottom: 30px;
   background-color: #fff;
 }
@@ -28,4 +27,16 @@
   font-size: 20px;
   line-height: 1.4;
   margin-bottom: 0;
+}
+
+@media (min-width: 992px) {
+  .single-block-content {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .single-block-content {
+    padding: 20px;
+  }
 }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project title</title>
+    <title>High quality brand new headphone &#8211; Classima</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700|Nunito:400,600,700,800&display=swap&subset=latin-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/lib.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
@@ -20,23 +20,24 @@
 </head>
 <body>
 <header class="top-bar">
-    <div class="container">
+    <div class="top-bar__container container">
         <div class="top-bar__wrap row">
-            <div class="col-md-2 col-sm-12 col-12">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-5">
                 <a href="#" class="top-bar__logo">
                     <img src="img/logo.png" alt="Site Name">
                 </a>
             </div>
 
-            <div class="top-bar__nav col-md-10 col-sm-12 col-12">
-
+            <div class="top-bar__nav col-lg-10 col-md-9 col-sm-8 col-7">
                 <a class="top-bar__btn" href="#">
-                    <i class="top-bar__btn-decor fa fa-plus" aria-hidden="true"></i>Post Your Ad
+                    <i class="top-bar__btn-decor fa fa-plus" aria-hidden="true"></i>Post <span class="d-none d-lg-block d-xl-none">&nbsp;Your&nbsp;</span> Ad
                 </a>
 
                 <a href="#" class="top-bar__login" data-toggle="tooltip" title="Login/Register">
                     <i class="fa fa-user-o" aria-hidden="true"></i>
                 </a>
+
+                <button class="menu-toggle"></button>
 
                 <ul class="menu list-unstyled">
                     <li class="menu-item menu-parent">
@@ -58,6 +59,7 @@
                                 <a href="#" class="menu-link">Home 5</a>
                             </li>
                         </ul>
+                        <span class="menu-parent__data"></span>
                     </li>
                     <li class="menu-item menu-parent menu-columns">
                         <a href="#" class="menu-link">All Ads</a>
@@ -78,6 +80,7 @@
                                         <a href="#" class="menu-link">Grid View 4</a>
                                     </li>
                                 </ul>
+                                <span class="menu-parent__data"></span>
                             </li>
                             <li class="menu-item">
                                 <a href="#" class="menu-link">List View</a>
@@ -95,6 +98,7 @@
                                         <a href="#" class="menu-link">List View 4</a>
                                     </li>
                                 </ul>
+                                <span class="menu-parent__data"></span>
                             </li>
                             <li class="menu-item">
                                 <a href="#" class="menu-link">Col3</a>
@@ -112,8 +116,10 @@
                                         <a href="#" class="menu-link">Store Details</a>
                                     </li>
                                 </ul>
+                                <span class="menu-parent__data"></span>
                             </li>
                         </ul>
+                        <span class="menu-parent__data"></span>
                     </li>
                     <li class="menu-item menu-parent menu-columns">
                         <a href="#" class="menu-link">Pages</a>
@@ -153,6 +159,7 @@
                                 </ul>
                             </li>
                         </ul>
+                        <span class="menu-parent__data"></span>
                     </li>
                     <li class="menu-item menu-parent">
                         <a href="#" class="menu-link">Stores</a>
@@ -164,6 +171,7 @@
                                 <a href="#" class="menu-link">Store Details</a>
                             </li>
                         </ul>
+                        <span class="menu-parent__data"></span>
                     </li>
                     <li class="menu-item menu-parent">
                         <a href="#" class="menu-link">Blog</a>
@@ -179,6 +187,7 @@
                                 <a href="#" class="menu-link">Single Post</a>
                             </li>
                         </ul>
+                        <span class="menu-parent__data"></span>
                     </li>
                     <li class="menu-item">
                         <a href="#" class="menu-link">Contact</a>
@@ -188,6 +197,7 @@
         </div>
     </div>
 </header>
+
 
 <div class="wrapper">
     <div class="page-header">
@@ -795,39 +805,33 @@
 </footer>
 
 
-<div class="modal fade" id="mail-to-seller" tabindex="-1" role="dialog"
-     aria-hidden="true">
+<div class="modal fade" id="mail-to-seller" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body" data-hide="0">
-                <form id="rtcl-contact-form" class="form-vertical">
-                    <div class="form-group"><input type="text" class="form-control"
-                                                   id="rtcl-contact-name"
-                                                   placeholder="Name *"
-                                                   required/></div>
-                    <div class="form-group"><input type="email" class="form-control"
-                                                   id="rtcl-contact-email"
-                                                   placeholder="Email*"
-                                                   required/></div>
-                    <div class="form-group"><textarea class="form-control"
-                                                      id="rtcl-contact-message" rows="3"
-                                                      placeholder="Message*"
-                                                      required></textarea></div>
-                    <div id="rtcl-contact-g-recaptcha"></div>
-                    <p id="rtcl-contact-message-display"></p>
-                    <button type="submit"
-                            class="btn btn-primary">Submit
-                    </button>
+                <form class="form-vertical">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="rtcl-contact-name" placeholder="Name *" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="rtcl-contact-email" placeholder="Email*" required/>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="rtcl-contact-message" rows="3" placeholder="Message*" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
     </div>
 </div>
+
 
 <script src="js/lib.min.js"></script>
 <script src="js/scripts.min.js"></script>

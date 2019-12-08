@@ -16,9 +16,6 @@
 }
 
 .comment-avatar {
-  max-width: 100px;
-  margin-right: 20px;
-  margin-bottom: 10px;
   flex: none;
 }
 
@@ -32,11 +29,6 @@
 
 .comment-meta {
   margin-bottom: 10px;
-  display: flex;
-}
-
-.comment-meta__info {
-  flex-grow: 1;
 }
 
 .comment-title {
@@ -68,4 +60,29 @@
 
 .comment-notes {
   margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+  .comment-avatar {
+    max-width: 100px;
+    margin-right: 20px;
+  }
+
+  .comment-meta {
+    display: flex;
+  }
+
+  .comment-meta__info {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 575px) {
+  .comment-avatar {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  .comment-meta__info {
+    margin-bottom: 8px;
+  }
 }
