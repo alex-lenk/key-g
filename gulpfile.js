@@ -16,14 +16,11 @@ gulp.task('browser-sync', function () {
         server: {
             baseDir: './build'
         },
-        notify: false,
-        // open: false,
-        // online: false, // Work Offline Without Internet Connection
-        // tunnel: true, tunnel: "projectname", // Demonstration page: http://projectname.localtunnel.me
+        notify: false
     })
 });
 
-// Sass|Scss Styles
+// SCSS Styles
 gulp.task('styles', function () {
     return gulp.src('./src/scss/*.scss')
         .pipe(sass({outputStyle: 'expanded'}).on("error", notify.onError()))
@@ -56,6 +53,33 @@ gulp.task('code', function () {
         .pipe(browserSync.reload({stream: true}))
 });
 
+// img task
+gulp.task('img', function () {
+    return gulp.src([
+        './src/img/**/*.*'
+    ])
+        .pipe(gulp.dest('./build/img'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
+// favicon task
+gulp.task('favicon', function () {
+    return gulp.src([
+        './src/favicon/*.*'
+    ])
+        .pipe(gulp.dest('./build/favicon'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
+// fonts task
+gulp.task('fonts', function () {
+    return gulp.src([
+        './src/fonts/*.*'
+    ])
+        .pipe(gulp.dest('./build/fonts'))
+        .pipe(browserSync.reload({stream: true}))
+});
+
 // Deploy
 gulp.task('rsync', function () {
     return gulp.src('./src/**')
@@ -70,29 +94,6 @@ gulp.task('rsync', function () {
             silent: false,
             compress: true
         }))
-});
-
-gulp.task('img', function () {
-    return gulp.src([
-        './src/img/**/*.*'
-    ])
-        .pipe(gulp.dest('./build/img'))
-        .pipe(browserSync.reload({stream: true}))
-});
-gulp.task('favicon', function () {
-    return gulp.src([
-        './src/favicon/*.*'
-    ])
-        .pipe(gulp.dest('./build/favicon'))
-        .pipe(browserSync.reload({stream: true}))
-});
-
-gulp.task('fonts', function () {
-    return gulp.src([
-        './src/fonts/*.*'
-    ])
-        .pipe(gulp.dest('./build/fonts'))
-        .pipe(browserSync.reload({stream: true}))
 });
 
 

@@ -1,12 +1,12 @@
 {
-	"name": "optimizedhtml",
+	"name": "key-g",
 	"version": "4.0.0",
-	"description": "OptimizedHTML 4 - Start HTML Template",
+	"description": "Test site for key-g.com",
 	"main": "index.js",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
-	"author": "WebDesign Master",
+	"author": "Alex Lenk",
 	"license": "ISC",
 	"devDependencies": {
 		"browser-sync": "^2.26.7",
