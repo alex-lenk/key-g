@@ -513,12 +513,13 @@
                     <div class="single-block__header">
                         <h3 class="single-block__title">1 Review</h3>
 
-                        <div class="star-rating" title="Rated 5.00 out of 5 based on 1 customer rating">
-                            <div class="star-rating__inner">
-                                Rated <strong class="rating">5.00</strong>
-                                out of 5 based on <span class="rating">1</span> customer rating
-                            </div>
-                        </div>
+                        <ul class="rating-star__list list-unstyled">
+                            <li class="rating-star__item fa active"></li>
+                            <li class="rating-star__item fa"></li>
+                            <li class="rating-star__item fa"></li>
+                            <li class="rating-star__item fa"></li>
+                            <li class="rating-star__item fa"></li>
+                        </ul>
                     </div>
 
 
@@ -536,13 +537,22 @@
                                                 <span class="comment-info__author">John Doe</span><span class="comment-info__time">November 5, 2018 @1:04 pm</span>
                                             </div>
                                         </div>
-                                        <div class="star-rating" title="Rated 5.00 out of 5 based on 1 customer rating">
+
+                                        <ul class="rating-star__list list-unstyled">
+                                            <li class="rating-star__item fa active"></li>
+                                            <li class="rating-star__item fa"></li>
+                                            <li class="rating-star__item fa"></li>
+                                            <li class="rating-star__item fa"></li>
+                                            <li class="rating-star__item fa"></li>
+                                        </ul>
+
+<!--                                        <div class="star-rating" title="Rated 5.00 out of 5 based on 1 customer rating">
                                             <div class="star-rating__inner">
                                                 Rated <strong class="rating">5.00</strong>
                                                 out of 5 based on <span class="rating">1</span>
                                                 customer rating
                                             </div>
-                                        </div>
+                                        </div>-->
                                     </div>
                                     <div class="comment-text">
                                         <p>
@@ -583,15 +593,16 @@
                                     <input type="text" class="form-control" name="title" id="title" aria-required="true" required>
                                 </div>
                                 <div class="comment-form-rating  form-group">
-                                    <label for="rating">Your Rating<span class="required">*</span></label>
-                                    <select name="rating" id="rating" class="form-control" required>
-                                        <option value="">Rate&hellip;</option>
-                                        <option value="5">Perfect</option>
-                                        <option value="4">Good</option>
-                                        <option value="3">Average</option>
-                                        <option value="2">Not that bad</option>
-                                        <option value="1">Very poor</option>
-                                    </select>
+                                    <label>Your Rating <span class="required">*</span></label>
+                                    <div class="rating-star">
+                                        <ul class="rating-star__list list-unstyled">
+                                            <li class="rating-star__item js__rating-star__item fa"></li>
+                                            <li class="rating-star__item js__rating-star__item fa"></li>
+                                            <li class="rating-star__item js__rating-star__item fa"></li>
+                                            <li class="rating-star__item js__rating-star__item fa"></li>
+                                            <li class="rating-star__item js__rating-star__item fa"></li>
+                                        </ul>
+                                    </div>
                                 </div>
                                 <div class="comment-form-comment  form-group">
                                     <label for="comment">Your Review&nbsp;<span class="required">*</span></label>
