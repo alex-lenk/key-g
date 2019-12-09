@@ -1,12 +1,16 @@
-body::before {
-  width: 100%;
-  display: block;
-  content: '';
-  @media (max-width: 991px) {
-    height: 52px;
-  }
-  @media (min-width: 992px) {
-    height: 90px;
+body {
+  background-color: #f5f7fa;
+
+  &::before {
+    width: 100%;
+    display: block;
+    content: '';
+    @media (max-width: 991px) {
+      height: 52px;
+    }
+    @media (min-width: 992px) {
+      height: 90px;
+    }
   }
 }
 
@@ -89,8 +93,4 @@ img {
     width: 49%;
     float: left;
   }
-}
-
-.wrapper {
-  background-color: #f5f7fa;
 }
