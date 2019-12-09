@@ -93,6 +93,15 @@ $(document).ready(function () {
     /* END Rating star on comment */
 
 
+    /* BEGIN Show phone when you click in the sidebar  */
+    $('.widget-box__phone-reveal').click(function () {
+        $(this).children('.text-muted').hide();
+        var phone = $(this).children('.numbers').attr('data-phone');
+        $(this).children('.numbers').text(phone);
+    });
+    /* END Show phone when you click in the sidebar */
+
+
     /* BEGIN Transfer "widget-about" on mobile */
     if ((isMobile.any())) $(".widget-about").appendTo(".single-block__location");
     /* END Transfer "widget-about" on mobile */
@@ -119,8 +128,9 @@ $(document).ready(function () {
 });
 
 
-function GoogleReadyHandlersk1fywes() {
-    var infoWindow, map = new google.maps.Map(document.getElementById("mapsk1fywes"), {
+/* BEGIN Initializing google map in site content */
+function GoogleReadyHandlers() {
+    var infoWindow, map = new google.maps.Map(document.getElementById('maps-content'), {
         center: {lat: 40.74741884809068, lng: -73.78190946044555},
         zoom: 15,
         disableDefaultUI: true,
@@ -130,3 +140,4 @@ function GoogleReadyHandlersk1fywes() {
     });
     return map;
 }
+/* END Initializing google map in site content */

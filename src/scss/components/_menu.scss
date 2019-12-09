@@ -31,7 +31,12 @@
 
 .open-menu {
   overflow: hidden;
-  padding-right: 17px;
+}
+
+@media (min-width: 576px) {
+  .open-menu {
+    padding-right: 16px;
+  }
 }
 
 @media (min-width: 992px) {

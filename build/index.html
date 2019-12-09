@@ -16,7 +16,7 @@
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffc40d">
     <meta name="msapplication-config" content="favicon/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#f85c70">
 </head>
 <body>
 <header class="top-bar">
@@ -374,7 +374,7 @@
                     <div class="single-block-content">
                         <div class="embed-responsive embed-responsive-16by9">
                             <div class="embed-responsive-item">
-                                <div style="width: auto;height: 460px" id="mapsk1fywes"></div>
+                                <div style="width: auto;height: 460px" id="maps-content"></div>
                             </div>
                         </div>
                     </div>
@@ -608,9 +608,8 @@
                                     <label for="comment">Your Review&nbsp;<span class="required">*</span></label>
                                     <textarea id="comment" class="form-control" name="comment" cols="45" rows="8" required></textarea>
                                 </div>
-                                <div class="form-submit">
-                                    <input name="submit" type="submit" id="submit" class="btn-primary btn" value="Submit">
-                                </div>
+
+                                <button type="submit" class="btn-primary btn comment-btn">Submit</button>
                             </form>
                         </div>
                     </div>
@@ -644,7 +643,7 @@
                         </div>
                         <div class="widget-box__phone">
                             <div class="widget-box__phone-reveal">
-                                <div class="numbers">6735568XXX</div>
+                                <div class="numbers" data-phone="6735568743">6735568XXX</div>
                                 <small class="text-muted">Click to reveal phone number</small>
                             </div>
                         </div>
@@ -847,7 +846,7 @@
 <div class="scrollToTop"><i class="fa fa-angle-double-up"></i></div>
 
 
-<script src="//maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=GoogleReadyHandlersk1fywes" async defer></script>
+<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFR9xL5cw0CyGsQdWHYhyawCTmyDMhGA8&callback=GoogleReadyHandlers" async defer></script>
 <script src="js/lib.min.js"></script>
 <script src="js/scripts.min.js"></script>
 </body>
