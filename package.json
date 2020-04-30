@@ -24,7 +24,7 @@
 		"gulp-sass": "^4.0.2",
 		"gulp-uglify": "^3.0.2",
 		"gulp-util": "^3.0.8",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"slick-slider": "^1.8.2",
 		"bootstrap": "^4.4.1",
 		"jquery-zoom": "^1.7.21",
